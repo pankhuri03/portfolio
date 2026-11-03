@@ -1,0 +1,17 @@
+
+{
+  "name": "Pankhuri Priya | Portfolio",
+  "short_name": "Pankhuri",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0F1FC",
+  "theme_color": "#626FA5",
+  "icons": [
+    {
+      "src": "/logo1.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -156,12 +156,12 @@ function Navbar() {
                 {isMenuOpen && (
                 <div
                     id="mobile-navigation"
-                    className="absolute top-full right-0 left-0 z-10 flex flex-col gap-5 bg-surface px-6 py-6 text-sm font-medium shadow-md md:hidden"
+                    className="absolute top-full right-0 left-0 z-10 flex flex-col gap-5 bg-navbar px-6 py-6 text-sm font-medium text-navbar-text shadow-md md:hidden"
                 >
                     {/* <NavLink to="/" end onClick={() => setIsMenuOpen(false)}>
                     Home
                     </NavLink> */}
-                    <Link to="/#about" className="hover:text-accent">
+                    <Link to="/#about" className="text-navbar-text">
                         About
                     </Link>
                     <NavLink
