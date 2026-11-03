@@ -46,6 +46,7 @@ function Navbar() {
             <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-10">
                 <NavLink
                     to="/"
+                    onClick={() => setIsMenuOpen(false)}
                     className="text-xl font-semibold tracking-tight"
                 >
                     <img
@@ -58,7 +59,7 @@ function Navbar() {
                 {/* Desktop navigation */}
                 
                 <div className="hidden items-center gap-8 text-sm font-medium md:flex">
-                {/* <NavLink
+                <NavLink
                     to="/"
                     end
                     className={({ isActive }) =>
@@ -66,7 +67,7 @@ function Navbar() {
                     }
                 >
                     Home
-                </NavLink> */}
+                </NavLink>
 
                     <Link
                         to="/#about"
@@ -158,12 +159,15 @@ function Navbar() {
                     id="mobile-navigation"
                     className="absolute top-full right-0 left-0 z-10 flex flex-col gap-5 bg-navbar px-6 py-6 text-sm font-medium text-navbar-text shadow-md md:hidden"
                 >
-                    {/* <NavLink to="/" end onClick={() => setIsMenuOpen(false)}>
+                    <NavLink to="/" end onClick={() => setIsMenuOpen(false)}>
                     Home
-                    </NavLink> */}
-                    <Link to="/#about" className="text-navbar-text">
-                        About
-                    </Link>
+                    </NavLink>
+                    <NavLink
+                    to="/#about"
+                    onClick={() => setIsMenuOpen(false)}
+                    >
+                    About
+                    </NavLink>
                     <NavLink
                     to="/background"
                     onClick={() => setIsMenuOpen(false)}
