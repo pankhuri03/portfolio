@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #F0F1FC;
+  --color-surface: #DFE3F8;
+  --color-soft-blue: #C0C9F0;
+  --color-accent: #7D8FD0;
+  --color-ink: #30385F;
+
+  --color-navbar: #626FA5;
+  --color-navbar-text: #E5E9FA;
+  --color-navbar-active: #FFFFFF;
+  --color-navbar-hover: #FFFFFF;
+}
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
