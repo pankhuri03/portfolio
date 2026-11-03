@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import { FaLinkedinIn } from 'react-icons/fa'
 
 function Contact() {
@@ -21,7 +21,12 @@ function Contact() {
           collaborate, and exchange ideas.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+      <div className="mt-6 mb-3 flex items-center gap-2 text-sm text-ink/70">
+        <MapPin size={16} className="text-accent" />
+        <span>Based in the USA</span>
+      </div>
+
+        <div className="mt-3 flex flex-wrap gap-4">
           <a
             href="mailto:pankhuripriya03@gmail.com"
             className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-medium text-white transition-colors hover:bg-accent"
