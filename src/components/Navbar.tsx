@@ -120,7 +120,7 @@ function Navbar() {
                 {/* Mobile menu button */}
                 <button
                     type="button"
-                    className="flex h-10 w-10 items-center justify-center text-ink md:hidden"
+                    className="flex h-10 w-10 items-center justify-center text-navbar-text md:hidden"
                     onClick={() => setIsMenuOpen(prev => !prev)}
                     aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                     aria-expanded={isMenuOpen}
