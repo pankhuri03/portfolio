@@ -63,10 +63,12 @@ function Navbar() {
                     to="/"
                     end
                     className={({ isActive }) =>
-                    isActive ? 'text-accent' : 'hover:text-accent'
+                        isActive
+                            ? 'text-navbar-active font-semibold'
+                            : 'transition-colors hover:text-navbar-hover'
                     }
                 >
-                    Home
+                    HOME
                 </NavLink>
 
                     <Link
